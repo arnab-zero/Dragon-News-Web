@@ -4,7 +4,7 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li className="btn-outline">
-        <NavLink>Home</NavLink>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li className="btn-outline">
         <NavLink>About</NavLink>
@@ -54,7 +54,7 @@ const Navbar = () => {
           <img src={userImage} className="w-10" alt="" />
         </button>
         <button className="btn-ghost font-bold px-3 py-2 rounded-lg">
-          LOGIN
+          <NavLink to="/login">LOGIN</NavLink>
         </button>
       </div>
     </div>
